@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import AppBodyMid from "./components/AppBodyMid/AppBodyMid";
+import AppBodyLayer1 from "./components/AppBodyLayer/AppBodyLayer1";
+import AppBodyCard from "./components/AppBodyCard/AppBodyCard";
+import AppBodyBelowCard from "./components/AppBodyBelowCard/AppBodyBelowCard";
+import AppUpperFooter from "./components/AppUpperFooter/AppUpperFooter";
+import AppLowerFooter from "./components/AppLowerFooter/AppLowerFooter";
+import AppNavbar from "./components/AppNavbar/AppNavbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app" >
+        <h1 >
+            <AppNavbar/>
+            <AppBodyMid/>
+            <AppBodyLayer1/>
+            <AppBodyCard/>
+            <AppBodyBelowCard/>
+            <AppUpperFooter/>
+            <AppLowerFooter/>
+        </h1>
     </div>
   );
 }
