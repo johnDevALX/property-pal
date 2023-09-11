@@ -6,16 +6,19 @@ import AppBodyBelowCard from "./components/AppBodyBelowCard/AppBodyBelowCard";
 import AppUpperFooter from "./components/AppUpperFooter/AppUpperFooter";
 import AppLowerFooter from "./components/AppLowerFooter/AppLowerFooter";
 import AppNavbar from "./components/AppNavbar/AppNavbar";
+import SignIn from "./components/SignIn/SignIn";
 
 function App() {
   return (
     <div className="app" >
         <h1 >
             <AppNavbar/>
-            <AppBodyMid/>
-            <AppBodyLayer1/>
-            <AppBodyCard/>
-            <AppBodyBelowCard/>
+            <hr/>
+            <SignIn/>
+            {/*<AppBodyMid/>*/}
+            {/*<AppBodyLayer1/>*/}
+            {/*<AppBodyCard/>*/}
+            {/*<AppBodyBelowCard/>*/}
             <AppUpperFooter/>
             <AppLowerFooter/>
         </h1>
