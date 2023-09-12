@@ -1,5 +1,6 @@
 import React from 'react';
 import {BsFacebook, BsInstagram, BsTiktok, BsTwitter} from "react-icons/bs";
+import Image from "../../../assets/svg/footer-art.svg";
 
 const AppLowerFooter = () => {
     return (
@@ -28,6 +29,9 @@ const AppLowerFooter = () => {
                         <i className="text-xs pt-1"> © 2022-2023 PropertyPal</i>
                     </span>
                 </div>
+            </div>
+            <div className={`mb-2`} >
+                <img src={Image} alt="footer-art" />
             </div>
         </div>
     );

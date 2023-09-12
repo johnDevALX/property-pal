@@ -17,10 +17,12 @@ const NewAccountForm = () => {
     let numberStatus;
     let symbolStatus;
     let lengthStatus;
+    let btnStatus = false;
 
     const handleRadio = () => {
         setRadio(!radio);
     }
+
     const handleEmailValue = (e) =>{
         setEmail(e.target.value)
         // const { name, value } = e.target;
@@ -42,6 +44,10 @@ const NewAccountForm = () => {
     } else {
         report = "Poor password"
         status = false;
+    }
+
+    if (!emailStatus && status){
+        btnStatus = true;
     }
 
     const hasUppercase = /^(?=.*[A-Z])/.test(password);
@@ -82,7 +88,7 @@ const NewAccountForm = () => {
 
 
                 <div className="flex items-center justify-center m-auto " >
-                    <button className="text-center p-1 px-6 my-3 hover:border hover:border-spacing-2 hover:border-slate-400 text-md rounded-md bg-blue-700 text-white hover:bg-white hover:text-blue-700 " >Submit</button>
+                    <button className={`text-center p-1 px-6 my-3 hover:border hover:border-spacing-2 hover:border-slate-400 text-md rounded-md bg-blue-700 text-white hover:bg-white hover:text-blue-700 ${btnStatus ? "" : "pointer-events-none opacity-50"}  `} >Submit</button>
                 </div>
             </form>
             <div className="mb-4 text-center" >
