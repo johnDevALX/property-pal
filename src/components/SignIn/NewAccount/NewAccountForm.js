@@ -5,6 +5,7 @@ const NewAccountForm = () => {
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
     const [radio, setRadio] = useState(false)
+    const [showPassword, setShowPassword] = useState(false)
     const regex = /^(?=.*[a-zA-Z0-9])(?=.*[^a-zA-Z0-9]).{9,}$/;
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -21,6 +22,9 @@ const NewAccountForm = () => {
 
     const handleRadio = () => {
         setRadio(!radio);
+    }
+    const handleShowPassword = () => {
+        setShowPassword(!showPassword);
     }
 
     const handleEmailValue = (e) =>{
@@ -72,7 +76,10 @@ const NewAccountForm = () => {
                 </div>
                 <div className="grid" >
                     <span className="flex justify-between text-sm font-bold text-black my-2" >Password <i className={`text-end text-sm font-medium ${status ? "text-green-600" : "text-red-600"} `} >{password && report}</i></span>
-                    <input type="password" value={password} onChange={handleCurrPassword} className={`bg-slate-100 text-sm text-black border border-spacing-2 border-slate-400  hover:border-blue-500 focus:bg-white ${status? "focus:border-green-600" : "focus:border-red-700"} focus:outline-none rounded-sm pl-2 py-1.5`} placeholder="Create password"  required/>
+                    <input type={showPassword ? "text" : "password"} value={password} onChange={handleCurrPassword} className={`bg-slate-100 text-sm text-black border border-spacing-2 border-slate-400  hover:border-blue-500 focus:bg-white ${status? "focus:border-green-600" : "focus:border-red-700"} focus:outline-none rounded-sm pl-2 py-1.5`} placeholder="Create password"  required/>
+                </div>
+                <div>
+                    <input type="checkbox" onClick={handleShowPassword} /> <span className={`font-medium text-sm`} >Show password</span>
                 </div>
                 <div className={`text-sm pl-3 mt-2`} >
                     <p className={`${lengthStatus ? "hidden" : "text-red-700"}`} >At least 8 characters</p>
