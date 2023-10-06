@@ -12,8 +12,6 @@ import BlogBody7 from "./BlogBody/BlogBody7";
 import AppLowerFooter from "../Home/AppLowerFooter/AppLowerFooter";
 
 const Blog = () => {
-    // const backgroundColor = "rgb(212, 250, 255)"
-    // style={{backgroundColor: backgroundColor}}
 
     return (
         <div  >
