@@ -1,5 +1,6 @@
 import React from 'react';
 import './BuyDropdown.css'
+import {Link} from "react-router-dom";
 const BuyDropdown = () => {
     return (
         <div className="dropdown bg-white w-full px-20">
@@ -7,7 +8,7 @@ const BuyDropdown = () => {
                 <div className=" mr-6 mb-10" >
                     <h4 className="menu">Homes For Sale</h4>
                     <div className="grid mt-3 text-blue-700 text-sm " >
-                        <a href="#" className="hover:underline" >ForeClosures</a>
+                        <Link to={`/foreClosure`} className="hover:underline" >ForeClosures</Link>
                         <a href="#" className="hover:underline">Coming soon</a>
                         <a href="#" className="hover:underline">For sale by owners</a>
                         <a href="#" className="hover:underline">New construction</a>

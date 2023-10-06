@@ -1,5 +1,6 @@
 import React from 'react';
 import './AppBodyLayer1.css'
+import {Link} from "react-router-dom";
 
 const AppBodyLayer1 = () => {
     return (
@@ -9,7 +10,7 @@ const AppBodyLayer1 = () => {
                     <h2 className="m-auto text-center text-2xl pb-4" >Get home recommendations</h2>
                     <p className="pb-4" >Sign in for a more personalized experience</p>
                     <div className="text-center">
-                        <button className="bg-blue-800 text-white px-5 py-2 rounded-full hover:bg-blue-700 hover:text-black" >Sign in</button>
+                        <Link to={`/signIn`} className="bg-blue-800 text-white px-5 py-2 rounded-full hover:bg-blue-700 hover:text-black" >Sign in</Link>
                     </div>
                 </div>
                 <div className="col-span-3 flex justify-center me-8" >

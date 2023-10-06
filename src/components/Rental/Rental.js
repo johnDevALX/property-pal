@@ -12,6 +12,9 @@ import leaseBg from '../../assets/images/leaseBg.webp'
 import lease from '../../assets/images/lease.webp'
 import paymentBg from '../../assets/images/paymentBg.webp'
 import payment from '../../assets/images/payment.webp'
+import RentalBelow from "./RentalBelow/RentalBelow";
+import AppUpperFooter from "../Home/AppUpperFooter/AppUpperFooter";
+import AppLowerFooter from "../Home/AppLowerFooter/AppLowerFooter";
 
 const Rental = () => {
     let id = "move";
@@ -38,6 +41,10 @@ const Rental = () => {
             <RentalLeftCard bgImg={applicationBg} img={application} pOne={applicationT1} pTwo={applicationT2} btnText={applicationBtn} />
             <RentalBelowCard bgImg={leaseBg} img={lease} pOne={leaseT1} pTwo={leaseT2} btnText={leaseBtn}   />
             <RentalLeftCard bgImg={paymentBg} img={payment} pOne={paymentT1} pTwo={paymentT2} btnText={paymentBtn} />
+            <RentalBelow/>
+            <hr/>
+            <AppUpperFooter/>
+            <AppLowerFooter/>
         </div>
     );
 };

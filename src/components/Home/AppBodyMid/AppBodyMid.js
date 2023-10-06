@@ -11,7 +11,7 @@ const AppBodyMid = () => {
             <div className="body text-center" style={{backgroundImage: `url(${bgImage})`}} >
                 <div className="child block justify-center items-center">
                     <p className="child-text font-bold text-2xl text-white" >Agents. Tours. Loans. Homes.</p>
-                    <div className="child-input flex justify-between items-center ">
+                    <div className=" child-input flex justify-between items-center ">
                         <input className="input-form py-4 text-1xl text-black" type="text"  placeholder="Enter an address, neighborhood, city or zip code" />
                         <span className="input-span" > <BsSearch/></span>
                     </div>

@@ -3,6 +3,7 @@ import './AppNavbar.css'
 import BuyDropdown from "./BuyDropdown/BuyDropdown";
 import RentDropdown from "./RentDropdown/RentDropdown";
 import SellDropdown from "./SellDropdown/SellDropdown";
+import {Link} from "react-router-dom";
 
 const AppNavbar = () => {
     const [buyDropdown, setBuyDropdown] = useState(false);
@@ -31,7 +32,7 @@ const AppNavbar = () => {
     }
 
     return (
-        <div>
+        <div className={`bg-white`} >
             <div className=" text-white flex justify-center py-6"  >
                 <div className="nav-list flex justify-evenly font-medium text-black" >
                     <a className="buy hover:underline " href="#" onMouseOver={onBuyHover} >Buy</a>
@@ -43,13 +44,13 @@ const AppNavbar = () => {
                 </div>
 
                 <div className="logo text-center text-3xl font-medium text-black" >
-                    <p>Property<i className="text-blue-700 font-bold" >Pal</i></p>
+                    <Link to={`/`} >Property<i className="text-blue-700 font-bold" >Pal</i></Link>
                 </div>
                 <div className="nav-list flex justify-evenly font-medium text-black " >
-                    <a href="#" >Manage Rentals</a>
-                    <a href="#" >Advertise</a>
-                    <a href="#" >Help</a>
-                    <a href="#" >Sign in</a>
+                    <Link to={`/rental`} >Manage Rentals</Link>
+                    <Link to={`/partners`} >Advertise</Link>
+                    <Link to={`/help`} >Help</Link>
+                    <Link to={`/signIn`} >Sign in</Link>
                 </div>
             </div>
             <div>

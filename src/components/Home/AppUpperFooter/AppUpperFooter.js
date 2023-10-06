@@ -1,12 +1,13 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const AppUpperFooter = () => {
     return (
-        <div>
+        <div className={`bg-white`} >
             <hr/>
             <div className="flex justify-between py-12 mx-10">
                 <div className="m-auto">
-                    <a href="#" className="hover:underline" >About</a>
+                    <Link to={`/about`} className="hover:underline" >About</Link>
                 </div>
                 <div className="m-auto">
                     <a href="#" className="hover:underline" >Zestimates</a>
@@ -18,13 +19,16 @@ const AppUpperFooter = () => {
                     <a href="#" className="hover:underline" >Careers</a>
                 </div>
                 <div className="m-auto">
-                    <a href="#" className="hover:underline" >Help</a>
+                    <Link to={`/help`} className="hover:underline" >Help</Link>
                 </div>
                 <div className="m-auto">
                     <a href="#" className="hover:underline" >Advertise</a>
                 </div>
                 <div className="m-auto">
                     <a href="#" className="hover:underline" >Terms of use</a>
+                </div>
+                <div className="m-auto">
+                    <Link to={`/learn`} className="hover:underline" >Blog</Link>
                 </div>
                 <div className="m-auto">
                     <a href="#" className="hover:underline" >Cookie preferences</a>
