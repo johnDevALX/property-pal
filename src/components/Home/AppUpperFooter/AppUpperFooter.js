@@ -13,7 +13,7 @@ const AppUpperFooter = () => {
                     <a href="#" className="hover:underline" >Zestimates</a>
                 </div>
                 <div className="m-auto">
-                    <a href="#" className="hover:underline" >Research</a>
+                    <Link to="/research" className="hover:underline" >Research</Link>
                 </div>
                 <div className="m-auto">
                     <a href="#" className="hover:underline" >Careers</a>

@@ -9,6 +9,7 @@ import FcPage from "./pages/ForeClosurePage/FcPage";
 import SubmitRequestPage from "./pages/SubmitRequestPage/SubmitRequestPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import BlogPage from "./pages/BlogPage/BlogPage";
+import ResearchPage from "./pages/ResearchPage/ResearchPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 <Route path={`/submitRequest`} element={<SubmitRequestPage/>} />
                 <Route path={`/about`} element={<AboutPage/>} />
                 <Route path={`/learn`} element={<BlogPage/>} />
+                <Route path={`/research`} element={<ResearchPage/>} />
             </Routes>
         </div>
       </BrowserRouter>
